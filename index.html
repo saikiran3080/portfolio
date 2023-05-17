@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&family=Titillium+Web&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/52b4a11881.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/sai.jpg" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Hii Folks</p>
+                <h1>I am <span>Sai Kiran</span>
+                <br> Welcome Here . .</h1>
+            </div>
+        </div>
+    </div>
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/img_1.jpeg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="subtitle">About me</h1>
+                    <p>I am an aspiring Software Devloper and Tech Enthusiast ,
+                        creates software programs and love to solve technical problems using my creativity ,
+                        analytical thinking and problem-solving skills.
+                    </p>
+                    <p>Software Devlopment is always been my nerve charging profession , I trained and upgraded    myself for the same , both technically and professionally. The skills which i have been grasped and experience i have are listed below.
+                    </p>
+                    
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Problem Solving</span><br>
+                                 Java , Data Structures
+                            </li>
+                            <li><span>Frontend</span><br>
+                                HTML , CSS , JS
+                            </li>
+                            <li><span>Backend</span><br>
+                                Java Servlets , JSP , MySQL , JDBC
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>MCA (2020-2023)</span><br>
+                                 National Institute of Technology , Raipur
+                            </li>
+                            <li><span>BCA (2017-2020)</span><br>
+                                 B.B.College , Asansol
+                            </li>
+                            <li><span>12th (2016-17)</span><br>
+                                Kendriya Vidyalaya no 3  , Bokaro
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Intern</span><br>
+                                 National Informatics Center , Raipur
+                            </li>
+                            
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ************services******** -->
+    <div id="services">
+
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-cloud"></i>
+                    <h2>Web Devlopment</h2>
+                    <p>* HTML</p>
+                    <p>* CSS</p>
+                    <p>* JS</p>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-file-code"></i>
+                    <h2>Problem Solving</h2>
+                    <p>* Leetcode</p>
+                    <p>* Hackerrank</p>
+                    <p>* GFG </p>
+                
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-list-check"></i>
+                    <h2>Projects</h2>
+                    <p>* Servlets , JSP</p>
+                    <p>* Ecllipse , Tomcat</p>
+                    <p>* MySQL , JDBC</p>
+                </div>
+            </div>
+         </div>
+    </div>
+     <!-- -------------Portfolio------------>
+     <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png" >
+                    <div class="layer">
+                        <h3>Phonebook Application</h3>
+                        <p>This application will facilates an individual user to maintain their contact details.</p>
+                        <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                    
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png">
+                    <div class="layer">
+                        <h3>Movie Site</h3>
+                        <p>This movie site will work as a search engine of movie and provide respective movie reviews.</p>
+                        <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png" >
+                    <div class="layer">
+                        <h3>Consulting group contact page</h3>
+                        <p>This website is used to provide a form through which clients can submit their contact details to the company.</p>
+                        <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="" class="btn">See more</a>
+            
+        </div>
+
+     </div>
+
+     <!-- ----------contact---------- -->
+     <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>contact@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>012345678</p>
+                    <div class="social-icons">
+                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-twitter"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="images/Sai_Kiran_Vakada_NIT_Raipur.pdf"  download class="btn btn2">Download CV</a>
+                </div>
+
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2 ">Submit</button>
+                    </form>
+                    <span id="msg"> </span>
+                </div>
+            </div>
+        </div>
+
+        <!-- ----------copyright------->
+        <div class="copyright">
+            <p>copyright @skv.2023</p>
+        </div>
+     </div>
+          
+          
+    <script>
+        var tablinks =  document.getElementsByClassName("tab-links");
+
+        var tabcontents =  document.getElementsByClassName("tab-contents");
+
+
+        function opentab(tabname)
+        {
+            for(tablink of tablinks)
+            {
+                tablink.classList.remove("active-link");
+            }
+
+            for(tabcontent of tabcontents)
+            {
+                tabcontent.classList.remove("active-tab");
+            }
+
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu()
+        {
+            sidemenu.style.right = "0";
+        }
+
+        function closemenu()
+        {
+            sidemenu.style.right = "-200px";
+        }
+
+        
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbyH79J2OdvguJyjDdoKrN0qPZeszj7sC4ghUvSuI5Y9trUsYjQcN7QdTGB7goAkm2Yf/exec'
+  const form = document.forms['submit-to-google-sheet']
+
+  const msg = document.getElementById("msg")
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML="Message sent Succesfully"
+        setTimeout(function()
+        {
+          msg.innerHTML="";
+        },5000)
+        form.reset()
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+
+
+
+    </script>
+</body>
+</html>
